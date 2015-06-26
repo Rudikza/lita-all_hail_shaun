@@ -4,7 +4,7 @@ module Lita
       route(/./, :all_hail_shaun)
 
       def all_hail_shaun(request)
-        return unless request.user.mention_name == "shaun"
+        return unless request.user.mention_name == "shaunrich"
 
         request.reply(return_random_statement)
       end
